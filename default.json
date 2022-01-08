@@ -31,7 +31,7 @@
             "matchUpdateTypes": [
                 "patch",
                 "pin",
-                "digest",
+                "digest"
             ],
             "automerge": true
         }
