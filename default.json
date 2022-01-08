@@ -1,14 +1,14 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "separateMajorMinor": true,
-  "separateMultipleMajor": true,
-  "separateMinorPatch": true,
-  "updateLockFiles": true,
-  "prConcurrentLimit": 0,
-  "prHourlyLimit": 0,
-      "ignoreTests": false,
-  "packageRules": [
-    {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "separateMajorMinor": true,
+    "separateMultipleMajor": true,
+    "separateMinorPatch": true,
+    "updateLockFiles": true,
+    "prConcurrentLimit": 0,
+    "prHourlyLimit": 0,
+    "ignoreTests": false,
+    "packageRules": [
+        {
             "matchUpdateTypes": [
                 "patch"
             ],
@@ -35,5 +35,5 @@
             ],
             "automerge": true
         }
-  ]
+    ]
 }
