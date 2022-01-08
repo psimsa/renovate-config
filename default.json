@@ -1,0 +1,39 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "separateMajorMinor": true,
+  "separateMultipleMajor": true,
+  "separateMinorPatch": true,
+  "updateLockFiles": true,
+  "prConcurrentLimit": 0,
+  "prHourlyLimit": 0,
+      "ignoreTests": false,
+  "packageRules": [
+    {
+            "matchUpdateTypes": [
+                "patch"
+            ],
+            "groupName": [
+                "patch updates"
+            ]
+        },
+        {
+            "matchPackagePatterns": [
+                "^jest",
+                "^@types/jest",
+                "^ts-jest",
+                "-jest$"
+            ],
+            "groupName": [
+                "Jest packages"
+            ]
+        },
+        {
+            "matchUpdateTypes": [
+                "patch",
+                "pin",
+                "digest",
+            ],
+            "automerge": true
+        }
+  ]
+}
