@@ -7,6 +7,10 @@
     "prConcurrentLimit": 0,
     "prHourlyLimit": 0,
     "ignoreTests": false,
+    "transitiveRemediation": true,
+    "postUpdateOptions": [
+        "npmDedupe"
+        ],
     "packageRules": [
         {
             "matchUpdateTypes": [
