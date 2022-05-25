@@ -9,45 +9,17 @@
     "ignoreTests": false,
     "transitiveRemediation": true,
     "constraints": {
-    "npm": ">=8.0.0",
-    "node": ">=16 <17"
-  },
-  "ignorePaths": [
-    "**/node_modules/**",
-    "**/bower_components/**"
-  ],
+        "npm": ">=8.0.0",
+        "node": ">=16 <17"
+    },
+    "ignorePaths": [
+        "**/node_modules/**",
+        "**/bower_components/**"
+    ],
     "postUpdateOptions": [
         "npmDedupe"
-        ],
+    ],
     "packageRules": [
-        {
-            "matchUpdateTypes": [
-                "patch"
-            ],
-            "groupName": [
-                "patch updates"
-            ]
-        },
-        {
-            "matchPackagePatterns": [
-                "^eslint"
-            ],
-            "groupName": [
-                "ESLint packages"
-            ]
-        },
-        
-        {
-            "matchPackagePatterns": [
-                "^jest",
-                "^@types/jest",
-                "^ts-jest",
-                "-jest$"
-            ],
-            "groupName": [
-                "Jest packages"
-            ]
-        },
         {
             "matchUpdateTypes": [
                 "patch",
@@ -57,7 +29,9 @@
             "automerge": true
         },
         {
-            "matchManagers": ["github-actions"],
+            "matchManagers": [
+                "github-actions"
+            ],
             "automerge": true
         }
     ]
