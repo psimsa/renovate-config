@@ -42,6 +42,13 @@
                 "mcr.microsoft.com/dotnet"
             ],
             "allowedVersions": "<7.0"
+        },
+        {
+            "matchPackagePrefixes":[
+            "@playwright/",
+                "mcr.microsoft.com/playwright"
+            ],
+            "groupName":"Playwright"
         }
     ]
 }
