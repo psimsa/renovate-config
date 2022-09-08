@@ -8,6 +8,7 @@
     "prHourlyLimit": 0,
     "ignoreTests": false,
     "transitiveRemediation": true,
+    "lockFileMaintenance": { "enabled": true },
     "constraints": {
         "npm": ">=8.0.0",
         "node": ">=16"
