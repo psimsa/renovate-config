@@ -41,6 +41,12 @@
                 "mcr.microsoft.com/playwright"
             ],
             "groupName":"Playwright"
+        },
+        {
+            "matchPackagePrefixes":[
+            "DotnetDispatcher"
+            ],
+            "groupName":"DotnetDispatcher"
         }
     ]
 }
