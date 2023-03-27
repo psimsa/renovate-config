@@ -23,10 +23,44 @@
     "packageRules": [
         {
             "matchUpdateTypes": [
+                "minor",
                 "patch",
-                "pin",
-                "digest"
+                "pin"
             ],
+            "matchDatasources": [
+                "nuget"
+            ],
+            "groupName": "nuget non-major dependencies",
+            "automerge": true
+        },
+        {
+            "matchUpdateTypes": [
+                "minor"
+            ],
+            "matchDatasources": [
+                "npm"
+            ],
+            "groupName": "npm minor dependencies",
+            "automerge": true
+        },
+        {
+            "matchUpdateTypes": [
+                "patch"
+            ],
+            "matchDatasources": [
+                "npm"
+            ],
+            "groupName": "npm patch dependencies",
+            "automerge": true
+        },
+        {
+            "matchUpdateTypes": [
+                "pin"
+            ],
+            "matchDatasources": [
+                "npm"
+            ],
+            "groupName": "pin npm dependencies",
             "automerge": true
         },
         {
